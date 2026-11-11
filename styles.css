@@ -33,3 +33,14 @@ footer { background:var(--brown); color:var(--cream); text-align:center; padding
  h1 { font-size:2.6rem; }
  h2 { font-size:2rem; }
 }
+
+/* Touchstone 4: favorites and form feedback */
+.interactive-panel { margin-top: 1.5rem; }
+.favorite-grid { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1rem 0; }
+.favorite-option { display: flex; align-items: center; gap: .45rem; padding: .8rem 1rem; border: 1px solid #ad765a; border-radius: .5rem; cursor: pointer; background: #fffaf4; }
+.favorite-option:has(input:checked) { background: #f1dccb; border-color: #683f2b; }
+.favorite-option input { width: 1.15rem; height: 1.15rem; }
+.feedback { margin: 1rem 0; font-weight: 600; }
+.field-error { display: block; color: #9a1f16; font-size: .92rem; font-weight: 600; margin-top: .25rem; }
+[aria-invalid="true"] { outline: 2px solid #b5271b; outline-offset: 2px; }
+@media (min-width: 700px) { .favorite-grid { gap: 1rem; } }
